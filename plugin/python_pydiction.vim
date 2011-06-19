@@ -58,14 +58,14 @@ if v:version < 700
 endif
 
 
-" Make the Tab key do python code completion:
-inoremap <silent> <buffer> <Tab> 
+" Make the Ctrl+n key do python code completion:
+inoremap <silent> <buffer> <C-n> 
          \<C-R>=<SID>SetVals()<CR>
          \<C-R>=<SID>TabComplete('down')<CR>
          \<C-R>=<SID>RestoreVals()<CR>
 
-" Make Shift+Tab do python code completion in the reverse direction:
-inoremap <silent> <buffer> <S-Tab> 
+" Make Ctrl+P do python code completion in the reverse direction:
+inoremap <silent> <buffer> <C-p> 
          \<C-R>=<SID>SetVals()<CR>
          \<C-R>=<SID>TabComplete('up')<CR>
          \<C-R>=<SID>RestoreVals()<CR>
