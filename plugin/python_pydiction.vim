@@ -59,13 +59,13 @@ endif
 
 
 " Make the Ctrl+n key do python code completion:
-inoremap <silent> <buffer> <C-n> 
+inoremap <silent> <buffer> <C-a> 
          \<C-R>=<SID>SetVals()<CR>
          \<C-R>=<SID>TabComplete('down')<CR>
          \<C-R>=<SID>RestoreVals()<CR>
 
 " Make Ctrl+P do python code completion in the reverse direction:
-inoremap <silent> <buffer> <C-p> 
+inoremap <silent> <buffer> <C-b> 
          \<C-R>=<SID>SetVals()<CR>
          \<C-R>=<SID>TabComplete('up')<CR>
          \<C-R>=<SID>RestoreVals()<CR>
